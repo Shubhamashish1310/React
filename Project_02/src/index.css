@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-900 text-white;
+  font-family: sans-serif;
+
+  @apply p-4;
+
+  @apply min-h-screen;
+
+  @apply flex justify-center items-center;
+
+  @apply text-center;
+
+
+
+}
