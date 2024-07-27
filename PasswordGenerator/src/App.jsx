@@ -1,5 +1,6 @@
 import { useState, useCallback, useEffect,useRef } from "react";
 
+
 import "./App.css";
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
   const [charall, setcharall] = useState(false);
   const [password, setpassword] = useState("");
 
-  
+
 //ref hook use 
 const passwordref = useRef(null);
 
@@ -19,6 +20,7 @@ const passwordref = useRef(null);
       alert( "Password copied: " + passwordref.current.value);
     }
   };
+
   const passwordgen = useCallback(() => {
     let pass = "";
     let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
@@ -57,7 +59,7 @@ const passwordref = useRef(null);
             <input
               type="range"
               min="8"
-              max="32"
+              max="40"
               value={length}
               onChange={(e) => setlength(e.target.value)}
               className="w-full cursor-pointer"
